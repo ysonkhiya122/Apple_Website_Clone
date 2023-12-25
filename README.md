@@ -30,7 +30,7 @@ The organizational framework of the repository encompasses:
 
 ### Method 1: Online
 
-Visit the live version of the project by following the Netlify link: [Inteleccess Project](https://inteleccessprojet.netlify.app/).
+Visit the live version of the project by following the Netlify link: [Inteleccess Project](https://inteleccessfrontendproject.netlify.app/store).
 
 ### Method 2: Locally
 1. Clone this repository: `git clone <repository-url>`.
