@@ -1,7 +1,501 @@
-html{
+::-webkit-scrollbar {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3232322f;
+}
+
+html {
+  box-sizing: border-box;
   overflow-x: hidden;
   overflow-y: scroll;
 }
+
+body {
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  overflow: overlay;
+}
+.topbar{
+  margin-top: 45px;
+  font-size: 14px;
+}
+
+.limited-area {
+  margin: 0 auto;
+  max-width: 980px;
+  width: 96%;
+}
+
+.limited-area a{
+  text-decoration: none;
+  color: #3b7cd3;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 2500px;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  transition: 1.6s;
+  display: flex;
+  align-items: center;
+  height: 53px;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+}
+
+.menu {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  height: 44px;
+}
+
+.btn-menu {
+  width: 30px;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  margin: 0;
+}
+
+.btn-menu span {
+  display: block;
+  width: 15px;
+  height: 1px;
+  margin: 6px 0;
+  background-color: white;
+  transition: 0.5s;
+}
+
+.search-menu {
+  display: none;
+}
+
+.links-menu {
+  height: 44px;
+}
+
+.ul-search li,
+.ul-search img {
+  height: 100%;
+}
+
+.span-bt {
+  display: block;
+  width: 15px;
+  height: 1px;
+  margin: 6px 0;
+  background-color: white;
+  transition: 0.5s;
+}
+
+.btn-menu {
+  display: none;
+}
+
+.container-bag {
+  position: absolute;
+  top: 44px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1240px;
+  width: 100vw;
+}
+
+.bag {
+  box-sizing: border-box;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 4px;
+  padding-bottom: 10px;
+  z-index: 11;
+}
+
+.bag-active {
+  display: flex;
+}
+
+.seta-bag {
+  position: absolute;
+  max-width: 100%;
+  width: 286px;
+  height: 10px;
+  left: 3px;
+  bottom: -9px;
+  display: block;
+  z-index: 10;
+}
+
+.seta-bag span {
+  width: 10px;
+  height: 10px;
+  display: none;
+  transform: rotate(45deg);
+  background-color: white;
+  border-left: 1px solid rgba(128, 128, 128, 0.315);
+  border-top: 1px solid rgba(128, 128, 128, 0.315);
+}
+
+.seta-active span {
+  display: block;
+}
+
+.svg-bag {
+  position: relative;
+}
+
+.svg-bag:hover {
+  cursor: pointer;
+}
+
+.content-bag {
+  width: 286px;
+  background-color: white;
+  border: 1px solid rgba(128, 128, 128, 0.315);
+  margin-top: 4px;
+  border-radius: 18px;
+}
+
+.content-bag p {
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 0;
+  padding-top: 33px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  color: rgb(126, 126, 126);
+}
+
+.links-bag {
+  width: 100%;
+}
+
+.links-bag ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 8%;
+  padding-bottom: 10px;
+}
+
+.links-bag li a {
+  text-align: left;
+  text-decoration: none;
+  display: block;
+  color: #0066cc;
+  font-size: 14px;
+  padding-left: 30px;
+  border-top: 1px solid rgb(214, 214, 214);
+  line-height: 3.2em;
+}
+
+.links-bag li:nth-child(1) {
+  background-image: url(https://www.apple.com/ac/globalnav/7/pt_BR/assets/ac-store/bag.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 45px;
+}
+
+.links-bag li:nth-child(2) {
+  background-image: url(https://www.apple.com/ac/globalnav/7/pt_BR/assets/ac-store/savedbyyou.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 45px;
+}
+
+.links-bag li:nth-child(3) {
+  background-image: url(https://www.apple.com/ac/globalnav/7/pt_BR/assets/ac-store/orders.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 45px;
+}
+
+.links-bag li:nth-child(4) {
+  background-image: url(https://www.apple.com/ac/globalnav/7/pt_BR/assets/ac-store/account.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 45px;
+}
+
+.links-bag li:nth-child(5) {
+  background-image: url(https://www.apple.com/ac/globalnav/7/pt_BR/assets/ac-store/signIn.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 45px;
+}
+
+.remove-bag {
+  display: none;
+}
+
+.contain-header {
+  text-align: center;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+}
+
+.ul-search {
+  display: flex;
+  padding: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  list-style: none;
+}
+
+.link-topo {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.links-menu a {
+  color: rgb(204, 204, 204);
+  text-decoration: none;
+  line-height: 3.8em;
+  font-size: 12px;
+  transition: 0.5s;
+  padding: 0 1px;
+}
+
+.links-menu a:hover {
+  color: white;
+  transition: 0.5s;
+}
+
+.svg-search {
+  height: 110%;
+    width: 13px;
+    object-fit: cover;
+    object-position: 0px -3px;
+    overflow-y:hidden;
+}
+
+
+
+@media (max-width: 833px) {
+  .limited-area {
+    width: 100%;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0px;
+    background-color: black;
+    width: 100%;
+    height: 0px;
+    top: 43px;
+    transition: ease 0.5s;
+    overflow-y: hidden;
+  }
+
+  .active {
+    height: 100vh;
+  }
+
+  .header-active {
+    background-color: black;
+    transition: 0.2s;
+    overflow: visible;
+  }
+
+  .span-topo-active {
+    transition: 0.5s;
+    transform: translateY(5px) rotate(45deg);
+  }
+
+  .span-bottom-active {
+    transition: 0.5s;
+    transform: translateY(-2px) rotate(-45deg);
+  }
+
+  .btn-menu {
+    display: block;
+  }
+
+  .search-menu {
+    margin: 0 auto;
+    margin-bottom: 0;
+    width: 100%;
+    padding-bottom: 15px;
+    border-bottom: 0.1px solid rgba(128, 128, 128, 0.596);
+    display: flex;
+    justify-content: center;
+  }
+
+  .search-menu input {
+    width: 100%;
+    margin: 0 10px;
+    max-width: 600px;
+    border: none;
+    border-radius: 8px;
+    height: 35px;
+    background-color: #1d1d1f;
+    font-size: 16px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    outline: none;
+    color: white;
+  }
+
+  .links-menu {
+    padding: 0 40px;
+  }
+
+  .ul-search {
+    margin: 8px auto;
+    max-width: 600px;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .links-menu a {
+    border-bottom: 0.1px solid rgba(220, 220, 220, 0.247);
+    font-size: 16px;
+    text-align: left;
+    line-height: 44px;
+  }
+
+  .links-menu a:first-of-type {
+    border: none;
+    transform: scale(1.2) translateX(-50%);
+  }
+
+  .links-menu a:last-of-type {
+    border: none;
+  }
+
+  .seta-bag {
+    bottom: -3px;
+  }
+
+  .seta-bag span {
+    border: none;
+  }
+
+  .svg-bag {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    margin: 0 !important;
+    right: 20px;
+    transform: scale(1.2);
+  }
+
+  .bag {
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    padding-bottom: 10px;
+    z-index: -1;
+  }
+
+  .content-bag {
+    width: 100%;
+    background-color: white;
+    border-radius: 0;
+    margin: 0;
+    border: none;
+  }
+
+  .content-bag p {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 0;
+    padding-top: 33px;
+    padding-bottom: 20px;
+    font-size: 14px;
+    color: rgb(126, 126, 126);
+  }
+
+  .links-bag {
+    width: 100%;
+  }
+
+  .links-bag ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 8%;
+    padding-bottom: 10px;
+  }
+
+  .links-bag li a {
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    color: #0066cc;
+    font-size: 14px;
+    padding-left: 30px;
+    border-top: 1px solid rgb(214, 214, 214);
+    line-height: 3.2em;
+  }
+
+  .bag-opacity {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .remove-bag {
+    display: block;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.513);
+    width: 100%;
+  }
+
+  .svg-apple {
+    position: fixed;
+    height: 100%;
+    margin: 0 !important;
+    top: 0;
+    left: 50%;
+  }
+
+  .last-nav-mobile {
+    border: none !important;
+  }
+
+  .svg-search {
+    display: none;
+  }
+
+}
+
+@media (max-width: 270px) {
+  body {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
 
 body{
     font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
@@ -302,6 +796,11 @@ a{
     gap: 20px;
     padding-right: 5px;
   }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
   
   .card {
     padding: 20px;
@@ -324,37 +823,73 @@ a{
 
   .filter{
     border: 1px solid black;
-    margin-bottom: 19px;
+    margin-bottom: 1px;
   }
   
-  .store {
-    display: flex;
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); 
-    margin: 0 0px 0 0px;
-    justify-content: center;
-    gap: 0px;
-    flex-wrap: wrap;
-    padding-right: 10px;
-    background-color: #f8f9fa;
+  .cButton option{
+    text-align: start;
+
   }
-  
-  .storecard {
-    padding: 25px;
-    width: 180px;
-    background-color: #fff;
-    margin: 0px 0px 0px 0px;
-    border: 1px solid black;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+  .new{
+    margin-bottom: 5px;
   }
-  
-  
-  .storecard img {
-    max-width: 100%;
-  }
-  
-  .storecard p {
-    margin: 10px 0;
-  }
-  
+
+  /* Your existing CSS styles */
+
+/* Updated CSS for store and store cards */
+.store {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+.storecard {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  /* text-align: center; */
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.storecard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.storecard img {
+  width: 238.22px;
+  height: 180px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.storecard h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.storecard p {
+  margin-bottom: 8px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #0071e3;
+  color: #fff;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #89bff5;
+}

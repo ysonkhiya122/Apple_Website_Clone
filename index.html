@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- The below code is an HTML document that includes various external resources such as CSS files,
+JavaScript files, and font files. It sets the character encoding, viewport settings, and title of
+the webpage. It also includes a favicon, which is the small icon displayed in the browser tab. The
+code imports the Bootstrap CSS and JavaScript files, as well as the Font Awesome CSS file. It also
+includes additional CSS styles and imports another version of Bootstrap CSS. Finally, it includes
+links to Google Fonts for different font families. -->
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Apple (India)</title>
   <link rel="shortcut icon" href="https://findicons.com/files/icons/1008/quiet/128/apple.png" type="image/x-icon">
-  <!-- <link rel="stylesheet" href="Bootstrap\css\bootstrap.css"> -->
-  <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- <script src="Bootstrap/js/bootstrap.bundle.js"></script> -->
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
     crossorigin="anonymous"></script>
@@ -25,7 +30,7 @@
   <link rel="stylesheet" href="style.css">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> -->
+
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,118 +38,177 @@
     href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@200&family=Raleway:wght@300&family=Source+Serif+4:wght@300&display=swap"
     rel="stylesheet">
 
-  <style>
-
-  </style>
-
 </head>
 
 <body>
   <!-- navbar starts -->
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><i class="fa-brands fa-apple fa-x text-white"></i></a>
+  <!-- The below code is creating a header section for a website. It includes a navigation menu with
+  links to different pages, a search bar, and a shopping bag icon. The code also includes some
+  styling and images for the header elements. -->
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <div class="container" id="button" onclick="myFunction(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
+  <header class="header">
+    <div class="limited-area contain-header">
+      <nav class="nav-header">
+        <div class="menu">
+          <div class="search-menu">
+            <input type="text" placeholder="Search Apple.in">
+          </div>
+          <div class="links-menu">
+            <ul class="ul-search">
+              <div class="btn-menu">
+                <span></span>
+                <span></span>
+              </div>
+              <a class="svg-apple" href="index.html">
+                <li>
+                  <img
+                    src="https://www.apple.com/ac/globalnav/7/en_US/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__b5er5ngrzxqq_large.svg">
+                </li>
+              </a>
+              <a href="store.html">
+                <li>Store</li>
+              </a>
+              <a href="#">
+                <li>Mac</li>
+              </a>
+              <a href="#">
+                <li>iPad</li>
+              </a>
+              <a href="#">
+                <li>iPhone</li>
+              </a>
+              <a href="#">
+                <li>Watch</li>
+              </a>
+              <a href="#">
+                <li>AirPods</li>
+              </a>
+              <a href="#">
+                <li>TV and Home</li>
+              </a>
+              <a href="#">
+                <li>Only at Apple</li>
+              </a>
+              <a href="#">
+                <li>Accessories</li>
+              </a>
+              <a class="last-nav-mobile" href="#">
+                <li>Support</li>
+              </a>
+              <a class="svg-search" href="#">
+                <li class="search">
+                  <img class="svg-search"
+                    src="https://www.apple.com/ac/globalnav/7/en_US/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_search_image__cbllq1gkias2_large.svg">
+                </li>
+              </a>
+              <a class="svg-bag">
+                <li>
+
+                  <img
+                    src="https://www.apple.com/ac/globalnav/7/en_US/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_bag_image__yzte50i47ciu_large.svg">
+                </li>
+                <div class="seta-bag">
+                  <span></span>
+                </div>
+              </a>
+            </ul>
+          </div>
         </div>
-        <!-- <span class="navbar-toggler-icon"></span> -->
+        <div class="container-bag">
 
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-lg-auto me-lg-auto mb-2 mb-lg-0" id="nav-menu">
-          <li class="nav-item">
-            <a class="nav-link  active" aria-current="page" href="store.html">Store</a>
-          </li>
+          <!-- The below code is creating a section for a bag or shopping cart. It displays a message
+          saying "Your bag is empty" and provides links for various actions related to the bag, such
+          as viewing the bag, saved items, requests, account, and signing in. The code also includes
+          a "remove-bag" element, which is likely used for removing the bag or clearing its
+          contents. -->
 
-          <li class="nav-item">
-            <a class="nav-link" href="#">Mac</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">iPad</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">iPhone</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Watch</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Airpods</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">TV & Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Only on Apple</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Accessories</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Support</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa-solid fa-bag-shopping"></i></a>
-          </li>
-
-        </ul>
-
-      </div>
-
+          <div class="bag">
+            <div class="content-bag">
+              <p>Your bag is empty</p>
+              <div class="links-bag">
+                <ul>
+                  <li><a href="#">Bag</a></li>
+                  <li><a href="#">Saved Itens</a></li>
+                  <li><a href="#">Requests</a></li>
+                  <li><a href="#">Account</a></li>
+                  <li><a href="#">Sign in</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="remove-bag"></div>
+          </div>
+        </div>
+      </nav>
     </div>
-  </nav>
+    </div>
+  </header>
 
   <!-- navbar End -->
 
-  <div class="bg-light">
-    <p class="text-dark text-center py-2 fs-6">Save up to ₹8000.00 instantly on eligible products with HDFC Bank Credit Cards.* Plus No Cost EMI from most leading banks.
-      <a href="#" class="text-decoration-none">Buy Now></a>
+  <!-- The below code is creating a div element with the class "bg-light topbar". Inside the div, there
+  is a paragraph element with the classes "text-dark text-center py-2 fs-6". The paragraph contains
+  a text message. There is also a link with the text "Buy Now" that redirects to the "store.html" page. -->
+
+  <div class="bg-light topbar">
+    <p class="text-dark text-center py-2 fs-6">Save up to ₹8000.00 instantly on eligible products with HDFC Bank Credit
+      Cards.* Plus No Cost EMI from most leading banks.
+      <a href="store.html" class="text-decoration-none">Buy Now></a>
     </p>
   </div>
 
   <!-- iphone 15 starts first image -->
 
+  <!-- The below code is creating a section on a webpage that displays information about the iPhone 15
+  Pro. It includes a heading, a subheading, and two links for more information and purchasing. It
+  also includes an image of the iPhone 15 Pro. -->
+
   <div class="my-2">
     <p class="text-center text-dark display-3 pt-5"><strong>iPhone 15 Pro</strong></p>
     <p class="text-center text-dark fs-3 display-6 pt-3">So Strong. So light. So Pro.</p>
     <p class="text-center fs-5 pt-3"><a href="#" class="text-decoration-none text-primary px-3">Learn more ></a>
-      <a href="#" class="text-decoration-none text-primary px-3">Buy ></a>
+      <a href="store.html" class="text-decoration-none text-primary px-3">Buy ></a>
     </p>
     <img src="Images/iphone-15-pro.jpg" class="img-fluid rounded mx-auto d-block" alt="iPhone 15 Pro">
   </div>
 
   <!-- second image -->
 
+  <!-- The below code is creating a section for promoting the iPhone 15. It includes a maroon background,
+  a heading displaying "iPhone 15", a subheading with the text "New camera. New design. Newphoria.",
+  and two links for learning more about the iPhone 15 and buying it. It also includes an image of
+  the iPhone 15. -->
+
   <div class="iphone-bgmaroon my-3">
     <p class="text-center text-white display-3 pt-5"><strong>iPhone 15</strong></p>
     <p class="superpower text-center fs-3 display-6 pt-3">New camera. New design. Newphoria.</p>
     <p class="text-center fs-5 pt-3"><a href="#" class="text-decoration-none text-primary px-3">Learn more ></a>
-      <a href="#" class="text-decoration-none text-primary px-3">Buy ></a>
+      <a href="store.html" class="text-decoration-none text-primary px-3">Buy ></a>
     </p>
     <img src="Images/iPhone15.jpg" class="img-fluid rounded mx-lg-auto d-block" alt="iPhone 13">
   </div>
 
   <!-- third image -->
 
+  <!-- The below code is creating a section on a webpage that displays information about the MacBook Pro.
+  It includes a heading, a subheading, and two links for more information and purchasing. It also
+  includes an image of the MacBook Pro. -->
+
   <div class="macbook-bg my-2">
     <p class="text-center text-dark display-3 pt-5"><strong>MacBook Pro</strong></p>
     <p class="text-center text-dark fs-3 display-6 pt-3">Supercharged for pros.</p>
     <p class="text-center fs-5 pt-3"><a href="#" class="text-decoration-none text-primary px-3">Learn more ></a>
-      <a href="#" class="text-decoration-none text-primary px-3">Buy ></a>
+      <a href="store.html" class="text-decoration-none text-primary px-3">Buy ></a>
     </p>
     <img src="Images/macbook-pro.png" class="img-fluid rounded mx-auto d-block" alt="MacBook Pro">
   </div>
 
   <!-- Watch & mini image -->
+
+  <!-- The below code is creating a responsive layout with two columns using Bootstrap classes. The first
+  column contains information and an image about the Apple Watch Series 7, while the second column
+  contains information and an image about the iPad Mini. The code also includes links to learn more
+  and buy the products. -->
 
   <div class="container-fluid m-lg-3 my-sm-3">
     <div class="row">
@@ -155,7 +219,7 @@
         <p class="text-center text-danger"><strong>SERIES 7</strong></p>
         <p class="text-center text-dark fs-3 display-6 pt-3">Introducing our largest display yet.</p>
         <p class="text-center fs-5 pt-3"><a href="#" class="text-decoration-none text-primary px-3">Learn more ></a>
-          <a href="#" class="text-decoration-none text-primary px-3">Buy ></a>
+          <a href="store.html" class="text-decoration-none text-primary px-3">Buy ></a>
         </p>
         <img src="Images/applewatch.jpg" class="img-fluid pt-lg-5 rounded mx-lg-auto d-block" alt="apple watch">
       </div>
@@ -164,7 +228,7 @@
               alt="iPad mini"></strong></p>
         <p class="text-center text-dark fs-3 display-6 pt-2">Mega power. Mini sized.</p>
         <p class="text-center fs-5 pt-2"><a href="#" class="text-decoration-none text-primary px-3">Learn more ></a>
-          <a href="#" class="text-decoration-none text-primary px-3">Buy ></a>
+          <a href="store.html" class="text-decoration-none text-primary px-3">Buy ></a>
         </p>
         <img src="Images/ipad-mini.jpg" class="img-fluid rounded mx-lg-auto d-block" alt="iPhone 13 Pro">
       </div>
@@ -172,6 +236,12 @@
   </div>
 
   <!-- airpods & speaker -->
+
+  <!-- The below code is creating a responsive layout using Bootstrap classes. It consists of two columns
+  within a container-fluid. The first column (col-lg-6) contains an image of Airpods, along with
+  some text and links. The second column (col-lg) contains an image of HomePod mini, along with some
+  text and links. The code is using Bootstrap classes to style the elements and make the layout
+  responsive. -->
 
   <div class="container-fluid m-lg-3 my-sm-3">
     <div class="row my-3">
@@ -181,13 +251,13 @@
         <p class="text-center text-dark h2 pt-1"><strong>Airpods</strong></p>
         <p class="text-center text-dark fs-3 display-6 pt-3">All-new with Spatial Audio</p>
         <p class="text-center fs-5 py-3"><a href="#" class="text-decoration-none text-primary px-3">Learn more ></a>
-          <a href="#" class="text-decoration-none text-primary px-3">Buy ></a>
+          <a href="store.html" class="text-decoration-none text-primary px-3">Buy ></a>
         </p>
       </div>
       <div class="col-lg homepod-bg ms-lg-2 row-col-md col-sm">
         <p class="text-center text-dark display-3 pt-5"><strong>HomePod mini</strong></p>
         <p class="text-center fs-5 pt-4"><a href="#" class="text-decoration-none text-primary px-3">Learn more ></a>
-          <a href="#" class="text-decoration-none text-primary px-3">Buy ></a>
+          <a href="store.html" class="text-decoration-none text-primary px-3">Buy ></a>
         </p>
         <img src="Images/HomePodmini.jpg" class="img-fluid pt-4 rounded mx-lg-auto d-block" alt="iPhone 13 Pro">
       </div>
@@ -195,6 +265,12 @@
   </div>
 
   <!-- photos -->
+
+  <!-- The below code is creating a responsive layout with two columns. The left column contains an image
+  of an Apple Watch, and the right column contains an image of an iPhone 13 Pro. The images are
+  displayed as fluid images, meaning they will scale and adjust their size based on the screen size.
+  The code also applies some styling to the columns, such as adding a background color and rounded
+  corners to the images. -->
 
   <div class="container-fluid m-lg-3 my-sm-3">
     <div class="row my-3">
@@ -236,12 +312,25 @@
   </footer>
 
   <!-- footer start -->
+
+  <!-- The below code is creating a footer section for a website. It includes a navigation menu with
+  different sections such as "Shop and learn", "Apple Store", "For Education", "For Business",
+  "Account", "Apple Values", and "About Apple". Each section has a list of links related to that
+  category. The footer also includes additional information such as "More ways to shop", copyright
+  information, and links to the privacy policy, terms of use, sales and refunds, legal information,
+  and site map. -->
+
   <footer>
     <div class="footer-content">
       <nav class="footer-menu">
         <div class="footer-col">
           <div class="item">
             <input type="checkbox" id="products">
+
+            <!-- The below code is creating a section with a heading "Shop and learn" and a list of
+            products. Each product is represented by a list item with a link to a specific page or
+            resource related to that product. -->
+
             <div class="col-section">
               <label for="products">
                 <h3>Shop and learn</h3>
@@ -262,6 +351,11 @@
             </div>
           </div>
         </div>
+
+        <!-- The below code is creating a section for the Apple Store in a website's footer. It includes
+        a checkbox input element with the id "store" and a heading "Apple Store". It also includes a
+        list of links for various options related to the Apple Store, such as finding a store,
+        Genius Bar, Today at Apple, Apple Camp, etc. -->
 
         <div class="footer-col">
           <div class="item">
@@ -286,6 +380,12 @@
             </div>
           </div>
         </div>
+
+        <!-- The below code is creating a footer section with two columns. Each column contains a
+        checkbox input, a heading, and a list of links. The first column is labeled "For Education"
+        and contains links related to Apple and education. The second column is labeled "For
+        Business" and contains links related to Apple and business. -->
+
         <div class="footer-col">
           <div class="item">
             <input type="checkbox" id="education">
@@ -312,6 +412,12 @@
             </div>
           </div>
         </div>
+
+        <!-- The below code is creating a footer section with two columns. Each column contains a
+        checkbox, a heading, and a list of links. The first column is for account-related links,
+        such as managing Apple ID, Apple Store Account, and iCloud.com. The second column is for
+        links related to Apple's values, including accessibility, education, environment, inclusion
+        and diversity, privacy, and supplier responsibility. -->
 
         <div class="footer-col">
           <div class="item">
@@ -345,6 +451,10 @@
           </div>
         </div>
 
+        <!-- The below code is creating a section in the footer of a webpage. It includes a checkbox
+        labeled "About Apple" and a list of links related to Apple, such as newsroom, Apple
+        leadership, job opportunities, investors, events, and contact information. -->
+
         <div class="footer-col">
           <div class="item">
             <input type="checkbox" id="about">
@@ -364,6 +474,12 @@
           </div>
         </div>
       </nav>
+
+      <!-- The below code is creating a footer section for a website. It includes information about more
+      ways to shop, such as visiting an Apple Store or finding a reseller. It also includes legal
+      information such as the copyright notice, privacy policy, terms of use, sales and refunds,
+      legal information, and a site map. -->
+
       <section class="footer-base">
         <div class="footer-more-ways" x-ms-format-detection="none">
           More ways to shop: Visit an <a href="/retail/">Apple Store</a>, <span class="nowrap">call 1-800-MY-APPLE, or
@@ -385,11 +501,10 @@
   <!-- footer end -->
 
   <!-- JavaScript Bundle with Popper -->
-  <script>
-    function myFunction(x) {
-      x.classList.toggle("change");
-    }
-  </script>
+  <!-- The below code is including a JavaScript file called "index.js" in an HTML document. -->
+
+  <script src="index.js"></script>
+
 </body>
 
 </html>
